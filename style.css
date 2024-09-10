@@ -380,6 +380,102 @@ footer a {
     font-size: 1.35rem;
     text-align: center;
     color: #000;
-    
+
     margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1250px) {
+    :root {
+        font-size: 8px;
+    }
+}
+@media (max-width: 950px) {
+    :root {
+        --max_width: min(var(--content_width), 98%);
+    }
+    #home h2 {
+        font-size: 7rem;
+        text-transform: capitalize;
+        color: #fff;
+    }
+    nav ul.nav-items li {
+        margin-left: 3rem;
+    }
+    article#home {
+        padding-inline: 3rem;
+    }
+}
+@media (max-width: 800px) {
+    #services ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #services ul li {
+        margin-inline: auto;
+        width: 35rem;
+    }
+}
+@media (max-width: 725px) {
+    :root {
+        font-size: 6px;
+    }
+    menu ul li {
+        font-size: 2rem;
+    }
+    nav ul.nav-items li {
+        font-size: 2.75rem;
+    }
+}
+@media (max-width: 565px) {
+    :root {
+        --max_width: min(var(--content_width), 100%);
+    }
+    menu {
+        grid-template-columns: 1fr;
+    }
+    menu .logo-box {
+        margin: 1rem;
+        justify-content: right;
+    }
+    menu ul li:nth-of-type(1) {
+        display: block;
+        text-align: right;
+    }
+    #services ul {
+        grid-template-columns: 1fr;
+    }
+    #services ul li {
+        margin-inline: auto;
+        width: min(50rem, 90%);
+    }
+    main picture img.-third {
+        display: none;
+    }
+    main picture > * {
+        width: 50%;
+        flex-basis: 50%;
+    }
+    #home h2 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    #home h3 {
+        font-size: 2rem;
+        text-align: center;;
+    }
+}
+@media (max-width: 450px) {
+    :root {
+        font-size: 7px;
+    }
+    main picture img.-second {
+        display: none;
+    }
+    main picture > * {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    #services ul li {
+        width: min(35rem, 90%);
+    }
 }
